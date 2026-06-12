@@ -161,7 +161,7 @@ pub struct CoverageCommand {
     pub bin_count: u64,
 
     /// Max memory in GB
-    #[arg(short, long, value_parser = clap::value_parser!(u64).range(6..=980), default_value_t = 6)]
+    #[arg(short, long, value_parser = clap::value_parser!(u64).range(6..=1024), default_value_t = 6)]
     pub memory: u64,
 
     /// Disable normalisation and output raw counts
@@ -220,7 +220,7 @@ pub struct CounterCommand {
     pub k_size: u64,
 
     /// Max memory in GB
-    #[arg(short, long, value_parser = clap::value_parser!(u64).range(6..=980), default_value_t = 6)]
+    #[arg(short, long, value_parser = clap::value_parser!(u64).range(6..=1024), default_value_t = 6)]
     pub memory: u64,
 
     /// Output ACGT instead of numeric values
